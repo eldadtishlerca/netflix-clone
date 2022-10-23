@@ -14,15 +14,29 @@ export const Nav = () => {
     return () => window.removeEventListener('scroll', transNav)
   }, [])
 
-  const goHome = () => {
+  const navigateHome = () => {
     navigate('/')
+  }
+
+  const navigateProfiles = () => {
+    navigate('/profile')
   }
 
   return (
     <div className={`nav ${navBg}`}>
       <div className="nav-cont">
-        <img className="nav-logo" src="../logo.png" alt="" onClick={goHome} />
-        <img className="nav-profile" src="../1.png" alt="" />
+        <img
+          className="nav-logo"
+          src="../logo.png"
+          alt=""
+          onClick={navigateHome}
+        />
+        <img
+          className="nav-profile"
+          src="../1.png"
+          alt=""
+          onClick={navigateProfiles}
+        />
       </div>
     </div>
   )

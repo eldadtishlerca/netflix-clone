@@ -62,9 +62,15 @@ export const LoginPage = () => {
             placeholder="Enter password"
           />
           <button onClick={userLogin}>Sign In</button>
+          <p>
+            Guest mode: <br />
+            guest@guest.com <br />
+            guest1
+          </p>
         </form>
         <p className="login-signup">
-          New to Netflix? <span onClick={userRegister}>Sign up now</span>
+          New to Netflix?{' '}
+          <span onClick={userRegister}>Fill the form and Sign Up</span>
         </p>
       </div>
     </div>

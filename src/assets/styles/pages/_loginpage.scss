@@ -19,6 +19,11 @@
   form {
    display: flex;
    flex-direction: column;
+   p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: rgb(168, 168, 168);
+   }
    input {
     background: rgb(43, 43, 43);
     border: none;

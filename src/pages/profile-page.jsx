@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom'
 export const ProfilePage = () => {
   const navigate = useNavigate()
 
-  const onManageProfiles = () => {
-    navigate('/manage')
+  const navigateAccount = () => {
+    navigate('/account')
   }
 
   return (
@@ -30,7 +30,7 @@ export const ProfilePage = () => {
           </div>
         </div>
         <div className="profile-manager">
-          <span onClick={onManageProfiles}>MANAGE PROFILES</span>
+          <span onClick={navigateAccount}>MANAGE PROFILES</span>
         </div>
       </div>
     </div>
